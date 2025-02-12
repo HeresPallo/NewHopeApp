@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react';
 
 // Vite configuration
 export default defineConfig({
-  root: 'src',  // Make sure Vite is using the `src` folder as the root
+  root: 'src',  // Ensures Vite uses the `src` folder as the root
   plugins: [react()],
   build: {
-    outDir: '../dist',  // Ensures that the build output goes to the root directory
-    emptyOutDir: true,  // Clears out the previous build before generating a new one
+    outDir: 'dist',  // Ensure the output is within the `src` folder
+    emptyOutDir: true,  // Clears the previous build
   },
 });
+
